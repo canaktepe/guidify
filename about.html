@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - GUIDify</title>
+  <link rel="stylesheet" href="about.css">
+</head>
+<body>
+  <main>
+    <div class="back-button">
+      <a href="options.html" class="back-link">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M19 12H5M12 19l-7-7 7-7"></path>
+        </svg>
+        <span>Back to Settings</span>
+      </a>
+    </div>
+
+    <div class="header">
+      <img src="icons/icon128.png" alt="GUIDify" class="logo">
+      <h1>GUIDify</h1>
+      <p class="version">Version 1.0.0</p>
+    </div>
+
+    <section class="card">
+      <h2>About</h2>
+      <p>GUIDify is a powerful Chrome extension that helps you generate multiple GUIDs (Globally Unique Identifiers) quickly and efficiently.</p>
+      
+      <h3>Features</h3>
+      <ul>
+        <li><strong>Bulk Generation:</strong> Generate up to 100,000 GUIDs at once</li>
+        <li><strong>Case Formatting:</strong> Choose between lowercase or UPPERCASE format</li>
+        <li><strong>Auto Download:</strong> Automatically save GUIDs to a .txt file</li>
+        <li><strong>Form Helper:</strong> Quick GUID upload button for file input fields</li>
+        <li><strong>Persistent Settings:</strong> Your preferences are saved and synced</li>
+        <li><strong>Unique Filenames:</strong> Timestamp-based filenames prevent overwrites</li>
+      </ul>
+
+      <h3>How to Use</h3>
+      <ol>
+        <li>Click the extension icon in your toolbar</li>
+        <li>Enter the number of GUIDs you want to generate (1-100,000)</li>
+        <li>Choose your preferred case format (lowercase/UPPERCASE)</li>
+        <li>Click "Generate" button</li>
+        <li>The file will be automatically downloaded to your Downloads folder</li>
+      </ol>
+
+      <h3>Form Helper</h3>
+      <p>When enabled in settings, a "Load GUIDs" button appears next to file upload fields on web pages. Click it to generate and upload GUIDs directly to the form.</p>
+    </section>
+
+    <section class="card">
+      <h2>Technical Details</h2>
+      <p><strong>GUID Format:</strong> RFC 4122 compliant UUIDs (version 4)</p>
+      <p><strong>Example:</strong> <code>a1b2c3d4-e5f6-4789-a012-b3c4d5e6f7a8</code></p>
+      <p><strong>Randomness:</strong> Uses cryptographically secure random number generation</p>
+    </section>
+
+    <section class="card">
+      <h2>Privacy</h2>
+      <p>This extension does not collect, store, or transmit any personal data. All GUID generation happens locally in your browser. Your settings are stored locally using Chrome's sync storage.</p>
+    </section>
+
+    <section class="card">
+      <h2>Permissions</h2>
+      <ul class="permissions">
+        <li>
+          <strong>Downloads:</strong> Required to save generated GUIDs as .txt files
+        </li>
+        <li>
+          <strong>Storage:</strong> Required to save your preferences (case format, form helper toggle)
+        </li>
+      </ul>
+    </section>
+
+    <section class="card developer">
+      <h2>Developer</h2>
+      <div class="developer-info">
+        <div class="developer-details">
+          <p class="developer-name">Can Aktepe</p>
+          <div class="developer-links">
+            <a href="https://canaktepe.com" target="_blank" rel="noopener noreferrer" class="dev-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+              <span>canaktepe.com</span>
+            </a>
+            <a href="https://github.com/canaktepe" target="_blank" rel="noopener noreferrer" class="dev-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+              <span>github.com/canaktepe</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card support">
+      <h2>Support This Project</h2>
+      <p>If you find this extension useful, consider supporting its development! Your support helps maintain and improve the extension.</p>
+      <div class="support-buttons">
+        <a href="https://github.com/sponsors/canaktepe" target="_blank" rel="noopener noreferrer" class="support-btn github-sponsor">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+          </svg>
+          <span>Sponsor on GitHub</span>
+        </a>
+      </div>
+      <p class="support-note">Every contribution, no matter how small, is greatly appreciated! ❤️</p>
+    </section>
+
+    <footer>
+      <p>Made with ❤️ for developers who need GUIDs</p>
+      <p class="copyright">© 2024 GUIDify by Can Aktepe. All rights reserved.</p>
+    </footer>
+  </main>
+</body>
+</html>

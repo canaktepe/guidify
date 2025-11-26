@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GUIDify Settings</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <main>
+    <div class="header-top">
+      <h1>GUIDify Settings</h1>
+      <a href="about.html" class="about-link" title="About">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"></circle>
+          <path d="M12 16v-4M12 8h.01"></path>
+        </svg>
+        <span>About</span>
+      </a>
+    </div>
+    <section class="card">
+      <label class="toggle">
+        <input id="enable-helper" type="checkbox">
+        <span class="slider"></span>
+        <div class="label-text">
+          <span class="title">GUID upload shortcut in forms</span>
+          <span class="desc">Show a button next to file upload fields to generate and upload GUIDs.</span>
+        </div>
+      </label>
+    </section>
+
+    <section class="card">
+      <h2>Default Case Format</h2>
+      <div class="radio-group">
+        <label class="radio-option">
+          <input type="radio" name="case-format" value="lowercase" id="case-lowercase">
+          <span class="radio-label">lowercase</span>
+          <span class="radio-desc">GUIDs will be generated in lowercase (e.g., a1b2c3d4-...)</span>
+        </label>
+        <label class="radio-option">
+          <input type="radio" name="case-format" value="uppercase" id="case-uppercase">
+          <span class="radio-label">UPPERCASE</span>
+          <span class="radio-desc">GUIDs will be generated in uppercase (e.g., A1B2C3D4-...)</span>
+        </label>
+      </div>
+    </section>
+
+    <div class="hint">Changes are saved automatically.</div>
+  </main>
+  <script type="module" src="options.js"></script>
+</body>
+</html>

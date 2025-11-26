@@ -1,0 +1,12 @@
+{
+  "name": "guid-generator-extension",
+  "version": "1.0.0",
+  "description": "Chrome extension to generate GUIDs and download as txt.",
+  "type": "module",
+  "scripts": {
+    "test": "node tests/uuid.test.js"
+  },
+  "dependencies": {
+    "canvas": "^3.2.0"
+  }
+}
